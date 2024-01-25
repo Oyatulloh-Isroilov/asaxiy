@@ -1,0 +1,160 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.svg {
+  width: 30px;
+  height: 25px;
+}
+
+.headerBar {
+  border-bottom: 1px solid #e6e8ee;
+  background: #f4f7fd;
+}
+
+.header {
+  display: flex;
+  padding-top: 10px;
+  align-items: center;
+  max-width: 1362px;
+  margin: 0 auto;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.asaxiy {
+  margin-bottom: -10px;
+}
+
+.menu {
+  display: flex;
+}
+
+.kategoriyaBtn {
+  position: relative;
+  border: none;
+  outline: none;
+  border-radius: 10px;
+  padding: 12px 30px;
+  left: 20px;
+  color: #fff;
+  background: #008dff;
+  transition:all 0.8s ease;
+}
+
+.kategoriyaBtn::before {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background: #fff;
+  top: 14px;
+  left: 10px;
+}
+
+.kategoriyaBtn::after {
+  content: "";
+  position: absolute;
+  width: 16px;
+  height: 2px;
+  background: #fff;
+  top: 20px;
+  left: 10px;
+}
+
+.kategoriyaBtn:hover {
+  background-image: var("x.png");
+}
+
+.search input {
+  width: 433px;
+  height: 40px;
+  padding: 10px;
+  border:3px solid  #008dff;
+  border-radius: 10px;
+  margin-right: 80px;
+  outline: none;
+}
+
+input::placeholder {
+  font-size: 15px;
+}
+
+.menu  {
+  gap: 30px;
+}
+
+.menu div {
+  cursor: pointer;
+}
+
+.menu img {
+  align-items: center;
+  margin-left: 5px;
+}
+
+.catalogParda {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: aqua;
+}
+
+.cart p::after {
+  content: '0';
+  font-size: 13px;
+  text-align: center;
+  position: relative;
+  bottom: 35px;
+  right: 45px;
+  display: inline-block;
+  width: 17px;
+  height: 16px;
+  color: #fff;
+  background-color: #008dff; 
+  border-radius: 50%;
+  margin-left: 4px;
+  visibility: hidden;
+}
+
+.cart p:empty::after {
+  visibility: hidden;
+}
+
+.cart p:not(:empty)::after {
+  visibility: visible;
+}
+
+.heart p::after {
+  content: '0';
+  font-size: 13px;
+  text-align: center;
+  position: relative;
+  bottom: 35px;
+  right: 53px;
+  display: inline-block;
+  width: 17px;
+  height: 16px;
+  color: #fff;
+  background-color: #008dff; 
+  border-radius: 50%;
+  margin-left: 4px;
+  visibility: hidden;
+}
+
+.heart p:empty::after {
+  visibility: hidden;
+}
+
+.heart p:not(:empty)::after {
+  visibility: visible;
+}
+
+.images {
+  width: 24px;
+  height: 24px;
+}
